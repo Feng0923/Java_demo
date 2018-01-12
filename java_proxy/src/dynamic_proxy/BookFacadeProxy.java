@@ -7,9 +7,14 @@ import java.lang.reflect.Proxy;
 public class BookFacadeProxy implements InvocationHandler {
     private Object target;
 
+    /**
+     * 绑定委托对象并返回一个代理类
+     * @param target
+     * @return
+     */
   public Object bind(Object target){
       this.target = target;
-      return Proxy.newProxyInstance(target.getClass().getClassLoader(),target.getClass().getInterfaces(),this);
+      return Proxy.newProxyInstance(target.getClass().getClassLoader(),target.getClass().getInterfaces(),this); //取得代理对象
   }
 
     @Override
