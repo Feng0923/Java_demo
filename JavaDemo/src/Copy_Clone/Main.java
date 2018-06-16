@@ -1,5 +1,8 @@
 package Copy_Clone;
 
+/**
+ * 有关于  复制与克隆的demo
+ * */
 public class Main {
     public static void main(String[] args) {
         A a = new A(1);
