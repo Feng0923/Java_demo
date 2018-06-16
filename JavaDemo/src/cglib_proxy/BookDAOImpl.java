@@ -6,4 +6,8 @@ public class BookDAOImpl implements BookDAO{
     public void addBook() {
         System.out.println("增加图书的方法");
     }
+
+    protected void print(){
+        System.out.println("I am " + this.getClass().getName());
+    }
 }
