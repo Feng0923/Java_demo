@@ -15,6 +15,7 @@ public class Main {
         //要看此时类的类型是什么,才能决定index的值.
         System.out.println(m.index);
         System.out.println(b.index);
+
     }
 }
 class A{
