@@ -3,7 +3,6 @@ package Extends;
 public class Main {
     public static void main(String[] args) {
         A m = new B();
-        System.out.println("-----------");
         A x = new B(2);
 
         A a1 = new A();
@@ -42,11 +41,11 @@ class B extends A{
         System.out.println("I am B " + i);
     }
 
-    public void speak(A a){
+    public void speak(A a){ //改写
         System.out.println("B");
     }
 
-    public void speak(B b){
+    public void speak(B b){ //重定义
         System.out.println("BB");
     }
 }
